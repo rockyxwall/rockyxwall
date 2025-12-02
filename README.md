@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/9bZkQhC.jpeg" alt="Banner" width="50%">
+  <img src="https://raw.githubusercontent.com/rockyxwall/rockyxwall/refs/heads/main/does_not_exist.jpg" alt="Banner" width="50%">
 </p>
 
 <h1 align="center">hi, i'm rockyxwall</h1>
@@ -24,10 +24,10 @@
 
 ### 🌀 Projects
 
-| HTML, CSS |
-| ---------- |
+| HTML, CSS                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | • [Lazy Study Doc](https://github.com/rockyxwall/Lazy-Study-Doc) - VitePress site for ranking and noting online courses for Bangladeshi students |
-| • [My Userstyles and Userscripts](https://github.com/rockyxwall/my-user-scripts-and-styles) - Personal tweaks and tools for personal use |
+| • [My Userstyles and Userscripts](https://github.com/rockyxwall/my-user-scripts-and-styles) - Personal tweaks and tools for personal use         |
 
 ### ⚡ Stats
 
