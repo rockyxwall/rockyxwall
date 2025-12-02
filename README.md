@@ -1,49 +1,47 @@
-<div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=T-Tanvir.T-Tanvir&left_color=grey&left_text=Visitors"  />
-</div>
+<p align="center">
+  <img src="https://i.imgur.com/9bZkQhC.jpeg" alt="Banner" width="50%">
+</p>
 
-<h3 align="left">🛠 Language and tools that I am learning...</h3>
+<h1 align="center">hi, i'm rockyxwall</h1>
 
-###
+<h3 align="center">welcome to my profile</h3>
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" alt="html5 logo"  />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="35" alt="css logo"  />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="35" alt="javascript logo"  />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="35" alt="react logo"  />
-  <img width="10" />
-  <img src="https://cdn.simpleicons.org/django/092E20" height="35" alt="django logo"  />
-  <img width="10" />
-  <img src="https://skillicons.dev/icons?i=py" height="35" alt="python logo"  />
-  <img width="10" />
-  <img src="https://skillicons.dev/icons?i=c" height="35" alt="c logo"  />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" height="35" alt="firebase logo"  />
-  <img width="10" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="35" alt="amazonwebservices logo"  />
-  <img width="10" />
-  <img src="https://cdn.simpleicons.org/docker/2496ED" height="35" alt="docker logo"  />
-</div>
+<p align="center">student tech hobbyist learning webdev,ai/ml</p>
 
-###
+<p align="center">
+  <strong><a href="#">Blog</a></strong> |
+  <strong><a href="#">Lazy Study Doc</a></strong>
+</p>
 
-<h3 align="left">📊 GitHub Stats</h3>
+#
 
-###
+### 🧰 Languages and Tools
 
-<div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=T-Tanvir&theme=dark&hide_border=true&include_all_commits=true&count_private=false&layout=compact" align="center" /></div>
-<br/>
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=T-Tanvir&theme=dark&hide_border=true&include_all_commits=true&count_private=false" align="center" /></div>
-<br/>
-<div align="center"><img src="https://nirzak-streak-stats.vercel.app/?user=T-Tanvir&theme=dark&hide_border=true" align="center" /></div>
-<br/>
+<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
+<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
+<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
+<img align="left" alt="Vue" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"/>
+<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+<br />
 
-### 
+#
 
-<h3 align="left">🔝 Top Contributed Repo</h3>
+### 📁 Projects
 
-### 
-<div align="center"><img src="https://github-contributor-stats.vercel.app/api?username=T-Tanvir&limit=5&theme=dark&hide_border=true&combine_all_yearly_contributions=true" align="center" /></div>
+- **Lazy Study Doc**  
+  VitePress site for ranking and noting online courses for Bangladeshi students.
+
+- **Personal Userstyles and Userscripts**  
+  Small tweaks and tools made for personal use.
+
+#
+
+### 📊 Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rockyxwall&show_icons=true&theme=dark)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rockyxwall&layout=compact&theme=dark)
+
+#
+
+### 📝 Blog
+
+Coming soon.
