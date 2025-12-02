@@ -29,8 +29,8 @@
 
 | HTML, CSS                                                                                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| • [Lazy Study Doc](https://github.com/rockyxwall/Lazy-Study-Doc) - VitePress site for listing online study resources for Bangladeshi students |
-| • [My Userstyles and Userscripts](https://github.com/rockyxwall/my-user-scripts-and-styles) - user scripts and styles for personal use        |
+| • [Lazy-Study-Doc](https://github.com/rockyxwall/Lazy-Study-Doc) - VitePress site for listing online study resources for Bangladeshi students |
+| • [my-user-scripts-and-styles](https://github.com/rockyxwall/my-user-scripts-and-styles) - user scripts and styles for personal use           |
 
 ### ⚡ Stats
 
