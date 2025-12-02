@@ -6,42 +6,40 @@
 
 <h3 align="center">welcome to my profile</h3>
 
-<p align="center">student tech hobbyist learning webdev,ai/ml</p>
+<p align="center">student tech hobbyist learning webdev, ai/ml</p>
 
 <p align="center">
   <strong><a href="#">Blog</a></strong> |
   <strong><a href="#">Lazy Study Doc</a></strong>
 </p>
 
-#
+<br>
 
-### 🧰 Languages and Tools
+#### 🛠️ Languages and Tools
 
-<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
-<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
-<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-<img align="left" alt="Vue" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"/>
-<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
-<br />
+<img align="left" alt="HTML" width="20px" style="padding-right:6px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
+<img align="left" alt="CSS" width="20px" style="padding-right:6px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
+<img align="left" alt="JavaScript" width="20px" style="padding-right:6px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
+<img align="left" alt="Vue" width="20px" style="padding-right:6px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"/>
+<img align="left" alt="Git" width="20px" style="padding-right:6px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+<br><br><br>
 
-#
+#### 🌀 Projects
 
-### 📁 Projects
+| HTML, CSS |
+| ---------- |
+| • [Lazy Study Doc](https://github.com/rockyxwall/Lazy-Study-Doc) - VitePress site for ranking and noting online courses for Bangladeshi students |
+| • [My Userstyles and Userscripts](https://github.com/rockyxwall/my-user-scripts-and-styles) - Personal tweaks and tools for personal use |
 
-- **Lazy Study Doc**  
-  VitePress site for ranking and noting online courses for Bangladeshi students.
+<br>
 
-- **Personal Userstyles and Userscripts**  
-  Small tweaks and tools made for personal use.
+#### ⚡ Stats
 
-#
-
-### 📊 Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rockyxwall&show_icons=true&theme=dark)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rockyxwall&layout=compact&theme=dark)
 
-#
+<br>
 
-### 📝 Blog
+#### 📝 Blog
 
 Coming soon.
