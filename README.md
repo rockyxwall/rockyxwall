@@ -27,10 +27,10 @@
 
 ### 🌀 Projects
 
-| HTML, CSS                                                                                                                                     |
-| --------------------------------------------------------------------------------------------------------------------------------------------- |
-| • [Lazy-Study-Doc](https://github.com/rockyxwall/Lazy-Study-Doc) - VitePress site for listing online study resources for Bangladeshi students |
-| • [my-user-scripts-and-styles](https://github.com/rockyxwall/my-user-scripts-and-styles) - user scripts and styles for personal use           |
+| HTML, CSS                                                                                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| • [Lazy-Study-Doc](https://github.com/rockyxwall/Lazy-Study-Doc) - personal site where I listed some online resources that I used to study for high school. |
+| • [my-user-scripts-and-styles](https://github.com/rockyxwall/my-user-scripts-and-styles) - user scripts and styles for personal use                         |
 
 ### ⚡ Stats
 
