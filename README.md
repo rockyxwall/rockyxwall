@@ -21,8 +21,8 @@
 <img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>
 <img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>
 <img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>
-<img align="left" alt="Vue" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"/>
-<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+<img align="left" alt="react" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+<img align="right" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
 <br><br>
 
 ### 🌀 Projects
@@ -31,6 +31,9 @@
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | • [Lazy-Study-Doc](https://github.com/rockyxwall/Lazy-Study-Doc) - personal site where I listed some online resources that I used to study for high school. |
 | • [my-user-scripts-and-styles](https://github.com/rockyxwall/my-user-scripts-and-styles) - user scripts and styles for personal use                         |
+| JavaScript                                                                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| • [js-core-projects](https://github.com/rockyxwall/js-core-projects) - All the projects I have done to learn the language.                                  |
 
 ### ⚡ Stats
 
