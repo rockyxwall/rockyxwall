@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rockyxwall/rockyxwall/refs/heads/main/does_not_exist.jpg" alt="Banner" width="50%">
+  <img src="https://raw.githubusercontent.com/rockyxwall/rockyxwall/refs/heads/main/does_not_exist.jpg" alt="Banner" width="auto">
 </p>
 
 <h1 align="center">hi, i'm <a href="#">rockyxwall</a>!</h1>
