@@ -9,11 +9,12 @@
 <p align="center">student `tech hobbyist` learning webdev, ai/ml</p>
 
 <p align="center">
-  <strong><a href="#">Website</a></strong> |
+  <!-- <strong><a href="#">Website</a></strong> |
   <strong><a href="#">Twitter</a></strong> |
   <strong><a href="#">Bluesky</a></strong> |
   <strong><a href="#">Discord</a></strong> |
-  <strong><a href="#">PGP</a></strong>
+  <strong><a href="#">PGP</a></strong> -->
+  _links-under-construction_
 </p>
 
 ### 🛠️ Languages and Tools
