@@ -6,7 +6,7 @@
 
 <h3 align="center">welcome to my profile</h3>
 
-<p align="center">student `tech hobbyist` learning webdev, ai/ml</p>
+<p align="center">student `tech hobbyist` learning webdev</p>
 
 <p align="center">
   <!-- <strong><a href="#">Website</a></strong> |
