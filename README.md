@@ -30,7 +30,7 @@
 
 | HTML(<img width="10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"/>), CSS(<img width="10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"/>) | JavaScript(<img width="10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"/>)         |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| • [Lazy-Study-Doc](https://github.com/rockyxwall/Lazy-Study-Doc) - personal site where I listed some online resources that I used to study for high school.                                                     | • [js-core-projects](https://github.com/rockyxwall/js-core-projects) - All the basic projects I have done to learn the language. |
+| • [lazy-study-doc](https://github.com/rockyxwall/lazy-study-doc) - personal site where I listed some online resources that I used to study for high school.                                                     | • [js-core-projects](https://github.com/rockyxwall/js-core-projects) - All the basic projects I have done to learn the language. |
 | • [my-user-scripts-and-styles](https://github.com/rockyxwall/my-user-scripts-and-styles) - user scripts and styles for personal use                                                                             |                                                                                                                                  |
 
 ### ⚡ Stats
