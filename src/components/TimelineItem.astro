@@ -16,9 +16,10 @@ const { date, image } = Astro.props;
     
     {image && (
       <div class="overflow-hidden rounded-xl border border-border bg-muted shadow-lg">
-        <img src={image} alt={date} class="w-full h-auto object-cover" />
+        <img src={image.startsWith('http') ? image : `${import.meta.env.BASE_URL}${image}`} alt={date} class="w-full h-auto object-cover" />
       </div>
     )}
+
     
     <div class="prose prose-invert prose-sm max-w-none text-foreground/80 leading-relaxed">
       <slot />

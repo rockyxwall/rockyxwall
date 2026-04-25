@@ -12,7 +12,8 @@ const description = "Portfolio of rockyxwall, a student and tech hobbyist learni
 <html lang="en" class="dark">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.svg`} />
+
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -31,10 +32,10 @@ const description = "Portfolio of rockyxwall, a student and tech hobbyist learni
           I'm rockyxwall, a student and tech hobbyist learning webdev. I enjoy experimenting with new technologies and building useful tools.
         </p>
         <div class="flex items-center justify-center gap-4 pt-4">
-          <a href="/about" class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
+          <a href={`${import.meta.env.BASE_URL}/about`} class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
             More about me
           </a>
-          <a href="/projects" class="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground">
+          <a href={`${import.meta.env.BASE_URL}/projects`} class="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground">
             View projects
           </a>
         </div>
@@ -42,7 +43,7 @@ const description = "Portfolio of rockyxwall, a student and tech hobbyist learni
 
       <!-- Highlights Grid -->
       <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <a href="/about" class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
+        <a href={`${import.meta.env.BASE_URL}/about`} class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
           <div class="p-2 rounded-lg bg-primary/10 w-fit text-primary">
             <User className="h-6 w-6" />
           </div>
@@ -52,7 +53,7 @@ const description = "Portfolio of rockyxwall, a student and tech hobbyist learni
           <p class="text-sm text-foreground/60">A student's journey into the world of tech and web development.</p>
         </a>
 
-        <a href="/projects" class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
+        <a href={`${import.meta.env.BASE_URL}/projects`} class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
           <div class="p-2 rounded-lg bg-primary/10 w-fit text-primary">
             <CodeXml className="h-6 w-6" />
           </div>
@@ -62,7 +63,7 @@ const description = "Portfolio of rockyxwall, a student and tech hobbyist learni
           <p class="text-sm text-foreground/60">Exploring core JavaScript projects and personalized user scripts.</p>
         </a>
 
-        <a href="/blog" class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
+        <a href={`${import.meta.env.BASE_URL}/blog`} class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
           <div class="p-2 rounded-lg bg-primary/10 w-fit text-primary">
             <Newspaper className="h-6 w-6" />
           </div>
@@ -71,6 +72,7 @@ const description = "Portfolio of rockyxwall, a student and tech hobbyist learni
           </h2>
           <p class="text-sm text-foreground/60">Sharing what I learn as I navigate the ever-changing landscape of tech.</p>
         </a>
+
       </section>
     </main>
 

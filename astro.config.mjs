@@ -6,7 +6,9 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://rockyxwall.com', // Updated for user
+  site: 'https://rockyxwall.github.io',
+  base: '/rockyxwall',
+
   integrations: [mdx(), sitemap(), react()],
   vite: {
     plugins: [tailwindcss()],
