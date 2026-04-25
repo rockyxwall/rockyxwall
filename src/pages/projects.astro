@@ -5,31 +5,30 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { ExternalLink, Terminal } from 'lucide-react';
 
-
-const title = "Projects | Daniel Garcia";
+const title = "Projects | rockyxwall";
 const description = "A selection of projects I've built or worked on.";
 
 const projects = [
   {
-    title: "AI Automation Platform",
-    description: "A cloud-based platform for automating business workflows using LLMs and custom agents.",
-    link: "#",
-    github: "#",
-    tags: ["Next.js", "Python", "OpenAI"]
+    title: "lazy-study-doc",
+    description: "A personal site where I listed some online resources that I used to study for high school.",
+    link: "https://github.com/rockyxwall/lazy-study-doc",
+    github: "https://github.com/rockyxwall/lazy-study-doc",
+    tags: ["HTML", "CSS"]
   },
   {
-    title: "DevOps Tooling",
-    description: "Internal tools for managing multi-cloud deployments and monitoring.",
-    link: "#",
-    github: "#",
-    tags: ["Go", "Docker", "AWS"]
+    title: "js-core-projects",
+    description: "All the basic projects I have done to learn the language.",
+    link: "https://github.com/rockyxwall/js-core-projects",
+    github: "https://github.com/rockyxwall/js-core-projects",
+    tags: ["JavaScript"]
   },
   {
-    title: "E-commerce Engine",
-    description: "A high-performance headless commerce API built for modern web storefronts.",
-    link: "#",
-    github: "#",
-    tags: ["TypeScript", "PostgreSQL", "Node.js"]
+    title: "my-user-scripts-and-styles",
+    description: "User scripts and styles for personal use.",
+    link: "https://github.com/rockyxwall/my-user-scripts-and-styles",
+    github: "https://github.com/rockyxwall/my-user-scripts-and-styles",
+    tags: ["JavaScript", "CSS"]
   }
 ];
 ---
@@ -50,7 +49,7 @@ const projects = [
       <section class="space-y-4">
         <h1 class="text-3xl font-bold tracking-tight">Projects</h1>
         <p class="text-foreground/60 leading-relaxed">
-          Here are some of the things I've been working on lately. From open-source tools to commercial projects.
+          Here are some of the things I've been working on as I learn web development.
         </p>
       </section>
 
@@ -70,14 +69,13 @@ const projects = [
                 </div>
               </div>
               <div class="flex gap-2">
-                <a href={project.github} class="text-foreground/40 hover:text-foreground">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" class="text-foreground/40 hover:text-foreground transition-colors">
                   <Terminal className="h-5 w-5" />
                 </a>
-                <a href={project.link} class="text-foreground/40 hover:text-foreground">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" class="text-foreground/40 hover:text-foreground transition-colors">
                   <ExternalLink className="h-5 w-5" />
                 </a>
               </div>
-
             </div>
           </div>
         ))}
