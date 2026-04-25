@@ -3,11 +3,10 @@ import '../styles/globals.css';
 import '@fontsource-variable/geist';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import TimelineItem from '../components/TimelineItem.astro';
-import { Check } from 'lucide-react';
+import { ArrowRight, CodeXml, Newspaper, User } from 'lucide-react';
 
-const title = "Daniel Garcia | About me";
-const description = "Industrial Engineer turned full stack developer and Indie Hacker.";
+const title = "Daniel Garcia | Indie Hacker & Developer";
+const description = "Portfolio of Daniel Garcia, an Industrial Engineer turned developer.";
 ---
 
 <html lang="en" class="dark">
@@ -22,73 +21,56 @@ const description = "Industrial Engineer turned full stack developer and Indie H
 	<body class="bg-background text-foreground font-sans antialiased min-h-screen flex flex-col">
     <Header />
 
-    <main class="flex-1 container max-w-screen-md mx-auto px-4 py-12 md:py-24 space-y-20">
-      <!-- Hero Section -->
-      <section class="space-y-6">
-        <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-          Hey, I'm Daniel <span class="inline-block animate-bounce">👋</span> An Industrial Engineer turned full stack developer and Indie Hacker.
+    <main class="flex-1 container max-w-screen-md mx-auto px-4 py-24 md:py-32 space-y-32">
+      <!-- Minimal Hero -->
+      <section class="space-y-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
+          Building tools for the <span class="text-primary italic">modern web</span>.
         </h1>
-      </section>
-
-      <!-- Quick Facts -->
-      <section class="space-y-8">
-        <h2 class="text-xl font-bold tracking-tight">Quick facts about me</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-          <div class="flex gap-3">
-            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <p class="text-sm text-foreground/70">I started learning code when I was 14, specifically Python.</p>
-          </div>
-          <div class="flex gap-3">
-            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <p class="text-sm text-foreground/70">I spent 8 years studying an engineering degree and two masters degrees in Madrid while doing many code and electronic projects on the side.</p>
-          </div>
-          <div class="flex gap-3">
-            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <p class="text-sm text-foreground/70">I worked as a Quality Engineer at Tesla's Berlin Gigafactory for 2 years, but I was also building internal web app tools on the side.</p>
-          </div>
-          <div class="flex gap-3">
-            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <p class="text-sm text-foreground/70">I decided to become an entrepreneur after feeling bored at Tesla.</p>
-          </div>
-          <div class="flex gap-3">
-            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <p class="text-sm text-foreground/70">I've had 2 failed projects, one cofounder split, 5 consulting jobs and 1 successful business.</p>
-          </div>
+        <p class="text-lg text-foreground/60 max-w-xl mx-auto leading-relaxed">
+          I'm Daniel, an Industrial Engineer turned full stack developer. I build AI automation tools, DevOps systems, and share my journey as an indie hacker.
+        </p>
+        <div class="flex items-center justify-center gap-4 pt-4">
+          <a href="/about" class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
+            More about me
+          </a>
+          <a href="/projects" class="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground">
+            View projects
+          </a>
         </div>
       </section>
 
-      <!-- My Journey -->
-      <section class="space-y-8">
-        <h2 class="text-xl font-bold tracking-tight">My journey</h2>
-        <div class="mt-8">
-          <TimelineItem date="1995-2013" image="/images/electronics.png">
-            <p>I was born in Madrid, Spain. I spent my childhood experimenting with <strong>electronics</strong> and building things on my own.</p>
-            <p>I <strong>picked up code when I was 14</strong>. My teachers would grab me out of class to <strong>fix the school's computers</strong>.</p>
-          </TimelineItem>
+      <!-- Highlights Grid -->
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a href="/about" class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
+          <div class="p-2 rounded-lg bg-primary/10 w-fit text-primary">
+            <User className="h-6 w-6" />
+          </div>
+          <h2 class="text-xl font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2">
+            My Story <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-all" />
+          </h2>
+          <p class="text-sm text-foreground/60">From Tesla engineer to indie hacker. See my journey and the timeline of how I got here.</p>
+        </a>
 
-          <TimelineItem date="2013-2019">
-            <p>I studied an <strong>engineering degree and two masters degrees</strong> in Madrid and a year in Philadelphia, USA; while doing many code and electronic projects on the side.</p>
-            <p>It was during this time that I decided I <strong>wanted to be an entrepreneur</strong>.</p>
-          </TimelineItem>
+        <a href="/projects" class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
+          <div class="p-2 rounded-lg bg-primary/10 w-fit text-primary">
+            <CodeXml className="h-6 w-6" />
+          </div>
+          <h2 class="text-xl font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2">
+            Projects <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-all" />
+          </h2>
+          <p class="text-sm text-foreground/60">Exploring AI automation, SaaS products, and open-source DevOps tooling.</p>
+        </a>
 
-          <TimelineItem date="2020">
-            <p>I started working as a <strong>Quality Intern at Correos</strong> (the Spanish postal service) and quickly became the go-to person for data analysis and automation.</p>
-            <p>I was the <strong>first person in the department who knew how to code</strong> and automate data analysis tasks.</p>
-          </TimelineItem>
-
-          <TimelineItem date="2020-2023" image="/images/tesla.png">
-            <p>I started working as a <strong>Quality Engineer at Tesla</strong>. I worked in <strong>Norway, France, Germany, United Arab Emirates and Spain</strong>.</p>
-            <p>My main job was to <strong>analyze service and factory data</strong> and fix the top issues the European Fleet was having.</p>
-          </TimelineItem>
-
-          <TimelineItem date="2023-Present" image="/images/setup.png">
-            <p>I decided to <strong>become an entrepreneur</strong> after feeling bored at Tesla for a while. I knew it was now or never.</p>
-            <p>I started learning proper <strong>full stack development</strong>.</p>
-            <p>I abandoned a project of my own to build a startup with a cofounder, that went south...</p>
-            <p>Started doing some <strong>consulting</strong> for other startups and companies, mainly on <strong>AI automation and DevOps</strong>; and writing a lot of useful guides on stuff that I learned along the way (that's probably how you got here).</p>
-            <p>I'm now running <strong>2 businesses</strong>, 1 of which has reached <strong>~$60K ARR</strong>, the other 2 are in initial stages as of the writing of this post.</p>
-          </TimelineItem>
-        </div>
+        <a href="/blog" class="group space-y-3 p-6 rounded-2xl border border-border bg-muted/30 hover:bg-muted/50 transition-all">
+          <div class="p-2 rounded-lg bg-primary/10 w-fit text-primary">
+            <Newspaper className="h-6 w-6" />
+          </div>
+          <h2 class="text-xl font-bold tracking-tight group-hover:text-primary transition-colors flex items-center gap-2">
+            Blog <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-all" />
+          </h2>
+          <p class="text-sm text-foreground/60">Thoughts on engineering, business, and the lessons I've learned along the way.</p>
+        </a>
       </section>
     </main>
 

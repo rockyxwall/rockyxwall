@@ -1,0 +1,97 @@
+---
+import '../styles/globals.css';
+import '@fontsource-variable/geist';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TimelineItem from '../components/TimelineItem.astro';
+import { Check } from 'lucide-react';
+
+const title = "Daniel Garcia | About me";
+const description = "Industrial Engineer turned full stack developer and Indie Hacker.";
+---
+
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+    <meta name="description" content={description} />
+	</head>
+	<body class="bg-background text-foreground font-sans antialiased min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-1 container max-w-screen-md mx-auto px-4 py-12 md:py-24 space-y-20">
+      <!-- Hero Section -->
+      <section class="space-y-6">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+          Hey, I'm Daniel <span class="inline-block animate-bounce">👋</span> An Industrial Engineer turned full stack developer and Indie Hacker.
+        </h1>
+      </section>
+
+      <!-- Quick Facts -->
+      <section class="space-y-8">
+        <h2 class="text-xl font-bold tracking-tight">Quick facts about me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I started learning code when I was 14, specifically Python.</p>
+          </div>
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I spent 8 years studying an engineering degree and two masters degrees in Madrid while doing many code and electronic projects on the side.</p>
+          </div>
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I worked as a Quality Engineer at Tesla's Berlin Gigafactory for 2 years, but I was also building internal web app tools on the side.</p>
+          </div>
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I decided to become an entrepreneur after feeling bored at Tesla.</p>
+          </div>
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I've had 2 failed projects, one cofounder split, 5 consulting jobs and 1 successful business.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Journey -->
+      <section class="space-y-8">
+        <h2 class="text-xl font-bold tracking-tight">My journey</h2>
+        <div class="mt-8">
+          <TimelineItem date="1995-2013" image="/images/electronics.png">
+            <p>I was born in Madrid, Spain. I spent my childhood experimenting with <strong>electronics</strong> and building things on my own.</p>
+            <p>I <strong>picked up code when I was 14</strong>. My teachers would grab me out of class to <strong>fix the school's computers</strong>.</p>
+          </TimelineItem>
+
+          <TimelineItem date="2013-2019">
+            <p>I studied an <strong>engineering degree and two masters degrees</strong> in Madrid and a year in Philadelphia, USA; while doing many code and electronic projects on the side.</p>
+            <p>It was during this time that I decided I <strong>wanted to be an entrepreneur</strong>.</p>
+          </TimelineItem>
+
+          <TimelineItem date="2020">
+            <p>I started working as a <strong>Quality Intern at Correos</strong> (the Spanish postal service) and quickly became the go-to person for data analysis and automation.</p>
+            <p>I was the <strong>first person in the department who knew how to code</strong> and automate data analysis tasks.</p>
+          </TimelineItem>
+
+          <TimelineItem date="2020-2023" image="/images/tesla.png">
+            <p>I started working as a <strong>Quality Engineer at Tesla</strong>. I worked in <strong>Norway, France, Germany, United Arab Emirates and Spain</strong>.</p>
+            <p>My main job was to <strong>analyze service and factory data</strong> and fix the top issues the European Fleet was having.</p>
+          </TimelineItem>
+
+          <TimelineItem date="2023-Present" image="/images/setup.png">
+            <p>I decided to <strong>become an entrepreneur</strong> after feeling bored at Tesla for a while. I knew it was now or never.</p>
+            <p>I started learning proper <strong>full stack development</strong>.</p>
+            <p>I abandoned a project of my own to build a startup with a cofounder, that went south...</p>
+            <p>Started doing some <strong>consulting</strong> for other startups and companies, mainly on <strong>AI automation and DevOps</strong>; and writing a lot of useful guides on stuff that I learned along the way (that's probably how you got here).</p>
+            <p>I'm now running <strong>2 businesses</strong>, 1 of which has reached <strong>~$60K ARR</strong>, the other 2 are in initial stages as of the writing of this post.</p>
+          </TimelineItem>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+	</body>
+</html>
