@@ -1,6 +1,23 @@
 ---
 import '../styles/globals.css';
 import '@fontsource-variable/geist';
+import { MANUAL_PROJECTS } from '../config';
+import { getAllProjects } from '../lib/github';
+
+const allProjects = await getAllProjects(MANUAL_PROJECTS);
+
+// Group projects for the table as per README
+const col1Names = ['lazy-study-doc', 'my-user-scripts-and-styles'];
+const col2Names = ['js-core-projects'];
+
+const col1 = allProjects.filter(p => col1Names.includes(p.name));
+const col2 = allProjects.filter(p => col2Names.includes(p.name));
+
+const htmlIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg";
+const cssIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg";
+const jsIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg";
+const reactIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg";
+const gitIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg";
 ---
 
 <html lang="en">
@@ -9,30 +26,142 @@ import '@fontsource-variable/geist';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>rockyxwall | Portfolio</title>
+		<title>rockyxwall | GitHub</title>
+		<style>
+			/* GitHub-like styles */
+			body {
+				background-color: #0d1117;
+				color: #c9d1d9;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+				line-height: 1.5;
+			}
+			a {
+				color: #58a6ff;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			code {
+				padding: .2em .4em;
+				margin: 0;
+				font-size: 85%;
+				background-color: rgba(110,118,129,0.4);
+				border-radius: 6px;
+				font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+			}
+			.container {
+				max-width: 888px;
+				margin: 0 auto;
+				padding: 40px 20px;
+			}
+			h1, h3 {
+				color: #f0f6fc;
+				border-bottom: 1px solid #21262d;
+				padding-bottom: .3em;
+				margin-top: 24px;
+				margin-bottom: 16px;
+				font-weight: 600;
+			}
+			h1 { font-size: 2em; text-align: center; border: none; }
+			h3 { font-size: 1.25em; text-align: left; }
+			.centered { text-align: center; }
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-top: 0;
+				margin-bottom: 16px;
+			}
+			table th, table td {
+				padding: 6px 13px;
+				border: 1px solid #30363d;
+			}
+			table tr {
+				background-color: #0d1117;
+				border-top: 1px solid #21262d;
+			}
+			table tr:nth-child(2n) {
+				background-color: #161b22;
+			}
+			.lang-icon {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		</style>
 	</head>
-	<body class="bg-zinc-950 text-zinc-100 min-h-screen flex items-center justify-center font-sans">
-		<main class="max-w-2xl w-full p-8 space-y-6">
-			<header class="space-y-2">
-				<h1 class="text-4xl font-bold tracking-tight">
-					hi, i'm <span class="text-blue-500">rockyxwall</span>!
-				</h1>
-				<p class="text-xl text-zinc-400">
-					welcome to my profile
-				</p>
-			</header>
+	<body>
+		<div class="container">
+			<!-- Banner -->
+			<p class="centered">
+				<img src="/src/img/does_not_exist.jpg" alt="Banner" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+			</p>
 
-			<section class="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 backdrop-blur-sm">
-				<p class="text-lg leading-relaxed">
-					I'm a <code class="bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">student</code> and 
-					<code class="bg-zinc-800 px-1.5 py-0.5 rounded text-zinc-300">tech hobbyist</code> 
-					currently learning web development.
-				</p>
-			</section>
+			<!-- Name -->
+			<h1>hi, i'm <a href="https://github.com/rockyxwall">rockyxwall</a>!</h1>
 
-			<footer class="pt-8 text-sm text-zinc-500">
-				<p>_links-under-construction_</p>
-			</footer>
-		</main>
+			<!-- Welcome -->
+			<h3 class="centered" style="border:none;">welcome to my profile</h3>
+
+			<!-- Subtitle -->
+			<p class="centered">
+				student <code>tech hobbyist</code> learning webdev
+			</p>
+
+			<!-- Links -->
+			<p class="centered">
+				<em>_links-under-construction_</em>
+			</p>
+
+			<br />
+
+			<!-- Languages and Tools -->
+			<h3>🛠️ Languages and Tools</h3>
+			<div style="overflow: hidden; margin-bottom: 16px;">
+				<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src={htmlIcon}/>
+				<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src={cssIcon}/>
+				<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src={jsIcon}/>
+				<img align="left" alt="react" width="30px" style="padding-right:10px;" src={reactIcon}/>
+				<img align="right" alt="Git" width="30px" style="padding-right:10px;" src={gitIcon}/>
+			</div>
+
+			<br />
+
+			<!-- Projects -->
+			<h3>🌀 Projects</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>
+							HTML(<img width="10px" class="lang-icon" src={htmlIcon}/>), 
+							CSS(<img width="10px" class="lang-icon" src={cssIcon}/>)
+						</th>
+						<th>
+							JavaScript(<img width="10px" class="lang-icon" src={jsIcon}/>)
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					{/* Dynamically build rows to match the 2-column layout */}
+					{Array.from({ length: Math.max(col1.length, col2.length) }).map((_, i) => (
+						<tr>
+							<td>
+								{col1[i] ? (
+									<span>• <a href={col1[i].html_url}>{col1[i].name}</a> - {col1[i].description}</span>
+								) : null}
+							</td>
+							<td>
+								{col2[i] ? (
+									<span>• <a href={col2[i].html_url}>{col2[i].name}</a> - {col2[i].description}</span>
+								) : null}
+							</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+
+			<!-- Stats -->
+			<h3>⚡ Stats</h3>
+			<p class="centered">T_T</p>
+		</div>
 	</body>
 </html>
