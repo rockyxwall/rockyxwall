@@ -1,167 +1,97 @@
 ---
 import '../styles/globals.css';
 import '@fontsource-variable/geist';
-import { MANUAL_PROJECTS } from '../config';
-import { getAllProjects } from '../lib/github';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import TimelineItem from '../components/TimelineItem.astro';
+import { Check } from 'lucide-react';
 
-const allProjects = await getAllProjects(MANUAL_PROJECTS);
-
-// Group projects for the table as per README
-const col1Names = ['lazy-study-doc', 'my-user-scripts-and-styles'];
-const col2Names = ['js-core-projects'];
-
-const col1 = allProjects.filter(p => col1Names.includes(p.name));
-const col2 = allProjects.filter(p => col2Names.includes(p.name));
-
-const htmlIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg";
-const cssIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg";
-const jsIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg";
-const reactIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg";
-const gitIcon = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg";
+const title = "Daniel Garcia | About me";
+const description = "Industrial Engineer turned full stack developer and Indie Hacker.";
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>rockyxwall | GitHub</title>
-		<style>
-			/* GitHub-like styles */
-			body {
-				background-color: #0d1117;
-				color: #c9d1d9;
-				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-				line-height: 1.5;
-			}
-			a {
-				color: #58a6ff;
-				text-decoration: none;
-			}
-			a:hover {
-				text-decoration: underline;
-			}
-			code {
-				padding: .2em .4em;
-				margin: 0;
-				font-size: 85%;
-				background-color: rgba(110,118,129,0.4);
-				border-radius: 6px;
-				font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
-			}
-			.container {
-				max-width: 888px;
-				margin: 0 auto;
-				padding: 40px 20px;
-			}
-			h1, h3 {
-				color: #f0f6fc;
-				border-bottom: 1px solid #21262d;
-				padding-bottom: .3em;
-				margin-top: 24px;
-				margin-bottom: 16px;
-				font-weight: 600;
-			}
-			h1 { font-size: 2em; text-align: center; border: none; }
-			h3 { font-size: 1.25em; text-align: left; }
-			.centered { text-align: center; }
-			table {
-				width: 100%;
-				border-collapse: collapse;
-				margin-top: 0;
-				margin-bottom: 16px;
-			}
-			table th, table td {
-				padding: 6px 13px;
-				border: 1px solid #30363d;
-			}
-			table tr {
-				background-color: #0d1117;
-				border-top: 1px solid #21262d;
-			}
-			table tr:nth-child(2n) {
-				background-color: #161b22;
-			}
-			.lang-icon {
-				display: inline-block;
-				vertical-align: middle;
-			}
-		</style>
+		<title>{title}</title>
+    <meta name="description" content={description} />
 	</head>
-	<body>
-		<div class="container">
-			<!-- Banner -->
-			<p class="centered">
-				<img src="/src/img/does_not_exist.jpg" alt="Banner" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-			</p>
+	<body class="bg-background text-foreground font-sans antialiased min-h-screen flex flex-col">
+    <Header />
 
-			<!-- Name -->
-			<h1>hi, i'm <a href="https://github.com/rockyxwall">rockyxwall</a>!</h1>
+    <main class="flex-1 container max-w-screen-md mx-auto px-4 py-12 md:py-24 space-y-20">
+      <!-- Hero Section -->
+      <section class="space-y-6">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+          Hey, I'm Daniel <span class="inline-block animate-bounce">👋</span> An Industrial Engineer turned full stack developer and Indie Hacker.
+        </h1>
+      </section>
 
-			<!-- Welcome -->
-			<h3 class="centered" style="border:none;">welcome to my profile</h3>
+      <!-- Quick Facts -->
+      <section class="space-y-8">
+        <h2 class="text-xl font-bold tracking-tight">Quick facts about me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I started learning code when I was 14, specifically Python.</p>
+          </div>
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I spent 8 years studying an engineering degree and two masters degrees in Madrid while doing many code and electronic projects on the side.</p>
+          </div>
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I worked as a Quality Engineer at Tesla's Berlin Gigafactory for 2 years, but I was also building internal web app tools on the side.</p>
+          </div>
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I decided to become an entrepreneur after feeling bored at Tesla.</p>
+          </div>
+          <div class="flex gap-3">
+            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+            <p class="text-sm text-foreground/70">I've had 2 failed projects, one cofounder split, 5 consulting jobs and 1 successful business.</p>
+          </div>
+        </div>
+      </section>
 
-			<!-- Subtitle -->
-			<p class="centered">
-				student <code>tech hobbyist</code> learning webdev
-			</p>
+      <!-- My Journey -->
+      <section class="space-y-8">
+        <h2 class="text-xl font-bold tracking-tight">My journey</h2>
+        <div class="mt-8">
+          <TimelineItem date="1995-2013" image="/images/electronics.png">
+            <p>I was born in Madrid, Spain. I spent my childhood experimenting with <strong>electronics</strong> and building things on my own.</p>
+            <p>I <strong>picked up code when I was 14</strong>. My teachers would grab me out of class to <strong>fix the school's computers</strong>.</p>
+          </TimelineItem>
 
-			<!-- Links -->
-			<p class="centered">
-				<em>_links-under-construction_</em>
-			</p>
+          <TimelineItem date="2013-2019">
+            <p>I studied an <strong>engineering degree and two masters degrees</strong> in Madrid and a year in Philadelphia, USA; while doing many code and electronic projects on the side.</p>
+            <p>It was during this time that I decided I <strong>wanted to be an entrepreneur</strong>.</p>
+          </TimelineItem>
 
-			<br />
+          <TimelineItem date="2020">
+            <p>I started working as a <strong>Quality Intern at Correos</strong> (the Spanish postal service) and quickly became the go-to person for data analysis and automation.</p>
+            <p>I was the <strong>first person in the department who knew how to code</strong> and automate data analysis tasks.</p>
+          </TimelineItem>
 
-			<!-- Languages and Tools -->
-			<h3>🛠️ Languages and Tools</h3>
-			<div style="overflow: hidden; margin-bottom: 16px;">
-				<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src={htmlIcon}/>
-				<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src={cssIcon}/>
-				<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src={jsIcon}/>
-				<img align="left" alt="react" width="30px" style="padding-right:10px;" src={reactIcon}/>
-				<img align="right" alt="Git" width="30px" style="padding-right:10px;" src={gitIcon}/>
-			</div>
+          <TimelineItem date="2020-2023" image="/images/tesla.png">
+            <p>I started working as a <strong>Quality Engineer at Tesla</strong>. I worked in <strong>Norway, France, Germany, United Arab Emirates and Spain</strong>.</p>
+            <p>My main job was to <strong>analyze service and factory data</strong> and fix the top issues the European Fleet was having.</p>
+          </TimelineItem>
 
-			<br />
+          <TimelineItem date="2023-Present" image="/images/setup.png">
+            <p>I decided to <strong>become an entrepreneur</strong> after feeling bored at Tesla for a while. I knew it was now or never.</p>
+            <p>I started learning proper <strong>full stack development</strong>.</p>
+            <p>I abandoned a project of my own to build a startup with a cofounder, that went south...</p>
+            <p>Started doing some <strong>consulting</strong> for other startups and companies, mainly on <strong>AI automation and DevOps</strong>; and writing a lot of useful guides on stuff that I learned along the way (that's probably how you got here).</p>
+            <p>I'm now running <strong>2 businesses</strong>, 1 of which has reached <strong>~$60K ARR</strong>, the other 2 are in initial stages as of the writing of this post.</p>
+          </TimelineItem>
+        </div>
+      </section>
+    </main>
 
-			<!-- Projects -->
-			<h3>🌀 Projects</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>
-							HTML(<img width="10px" class="lang-icon" src={htmlIcon}/>), 
-							CSS(<img width="10px" class="lang-icon" src={cssIcon}/>)
-						</th>
-						<th>
-							JavaScript(<img width="10px" class="lang-icon" src={jsIcon}/>)
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					{/* Dynamically build rows to match the 2-column layout */}
-					{Array.from({ length: Math.max(col1.length, col2.length) }).map((_, i) => (
-						<tr>
-							<td>
-								{col1[i] ? (
-									<span>• <a href={col1[i].html_url}>{col1[i].name}</a> - {col1[i].description}</span>
-								) : null}
-							</td>
-							<td>
-								{col2[i] ? (
-									<span>• <a href={col2[i].html_url}>{col2[i].name}</a> - {col2[i].description}</span>
-								) : null}
-							</td>
-						</tr>
-					))}
-				</tbody>
-			</table>
-
-			<!-- Stats -->
-			<h3>⚡ Stats</h3>
-			<p class="centered">T_T</p>
-		</div>
+    <Footer />
 	</body>
 </html>

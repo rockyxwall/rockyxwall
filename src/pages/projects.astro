@@ -1,0 +1,89 @@
+---
+import '../styles/globals.css';
+import '@fontsource-variable/geist';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { ExternalLink, Terminal } from 'lucide-react';
+
+
+const title = "Projects | Daniel Garcia";
+const description = "A selection of projects I've built or worked on.";
+
+const projects = [
+  {
+    title: "AI Automation Platform",
+    description: "A cloud-based platform for automating business workflows using LLMs and custom agents.",
+    link: "#",
+    github: "#",
+    tags: ["Next.js", "Python", "OpenAI"]
+  },
+  {
+    title: "DevOps Tooling",
+    description: "Internal tools for managing multi-cloud deployments and monitoring.",
+    link: "#",
+    github: "#",
+    tags: ["Go", "Docker", "AWS"]
+  },
+  {
+    title: "E-commerce Engine",
+    description: "A high-performance headless commerce API built for modern web storefronts.",
+    link: "#",
+    github: "#",
+    tags: ["TypeScript", "PostgreSQL", "Node.js"]
+  }
+];
+---
+
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+    <meta name="description" content={description} />
+	</head>
+	<body class="bg-background text-foreground font-sans antialiased min-h-screen flex flex-col">
+    <Header />
+
+    <main class="flex-1 container max-w-screen-md mx-auto px-4 py-12 md:py-24 space-y-12">
+      <section class="space-y-4">
+        <h1 class="text-3xl font-bold tracking-tight">Projects</h1>
+        <p class="text-foreground/60 leading-relaxed">
+          Here are some of the things I've been working on lately. From open-source tools to commercial projects.
+        </p>
+      </section>
+
+      <section class="grid grid-cols-1 gap-6">
+        {projects.map((project) => (
+          <div class="group relative overflow-hidden rounded-xl border border-border bg-muted/30 p-6 transition-all hover:bg-muted/50">
+            <div class="flex items-start justify-between">
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold tracking-tight">{project.title}</h3>
+                <p class="text-sm text-foreground/60 leading-relaxed">{project.description}</p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                  {project.tags.map(tag => (
+                    <span class="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <a href={project.github} class="text-foreground/40 hover:text-foreground">
+                  <Terminal className="h-5 w-5" />
+                </a>
+                <a href={project.link} class="text-foreground/40 hover:text-foreground">
+                  <ExternalLink className="h-5 w-5" />
+                </a>
+              </div>
+
+            </div>
+          </div>
+        ))}
+      </section>
+    </main>
+
+    <Footer />
+	</body>
+</html>
