@@ -55,7 +55,8 @@ const posts = [
         {posts.map((post) => (
           <article class="group relative flex flex-col space-y-2">
             <div class="flex items-center gap-4 text-xs text-foreground/40 font-medium">
-              <time dateTime={post.date}>{post.date}</time>
+              <time datetime={post.date}>{post.date}</time>
+
               <span>•</span>
               <span>{post.readingTime} read</span>
             </div>
